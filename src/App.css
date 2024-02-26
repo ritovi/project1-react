@@ -3,7 +3,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 2em;
-  background-image: url("../public/fondesk.jpg");
+  background-image: url("fondesk.jpg");
   background-size: cover;
 }
 
@@ -72,7 +72,7 @@ body {
 
 @media screen and (max-width: 480px) {
   body{
-    background-image: url("../public/phone.jpg");
+    background-image: url("phone.jpg");
     background-size: cover;
   }
   .caja{
@@ -88,7 +88,7 @@ body {
 
 @media screen and (min-width: 480px)  and (max-width : 1000px){
   body{
-    background-image: url("../public/tablet.jpg");
+    background-image: url("tablet.jpg");
     background-size: cover;
   }
   .caja{
