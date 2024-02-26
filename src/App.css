@@ -1,0 +1,106 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  background-image: url("fondesk.jpg");
+  background-size: cover;
+}
+
+.caja {
+  /* border: 2px solid #d52941; */
+  width: 600px;
+  height: 400px;
+  padding: 0.5em;
+  border-radius: 8px;
+  background-color: #6096ba;
+}
+
+.caja__div {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border: 0.5em solid white;
+}
+
+.caja__div div {
+  border: 2px solid blue;
+  width: 80%; height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7em 0.5em;
+  background-color: rgba(41, 10, 114, 0.6);
+  border-radius: 8px;
+  p{
+    text-align: left;
+    margin: 0.7em;
+    font-size: 1.2em; font-weight: bold;
+    color: white;
+    line-height: 1.5;
+    font-style: italic;
+    
+  }
+  button{
+    /* align-self: ; */
+    background-color: white;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1.2rem;
+    border-radius: 0.7em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    transition: 700ms;
+    color: rgb(47, 47, 167);
+  }
+  button:hover{
+    /* background-color: rgb(85, 20, 236); */
+    background-color: #0a84e9;
+    font-weight: bold; color: white;
+    letter-spacing: 0.25em;
+    /* box-shadow: 0 0 35px rgb(16, 2, 49); */
+    box-shadow: 0 0 35px #1e9bff;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body{
+    background-image: url("phone.jpg");
+    background-size: cover;
+  }
+  .caja{
+    width: 70vw; 
+  }
+  .caja__div div {
+    font-size: 0.8em;
+    button{
+      font-size: 1.1em;
+    }
+  }
+}
+
+@media screen and (min-width: 480px)  and (max-width : 1000px){
+  body{
+    background-image: url("tablet.jpg");
+    background-size: cover;
+  }
+  .caja{
+    width: 60vw; 
+  }
+  .caja__div div {
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 480px)  and (max-width : 620px){
+  
+  .caja__div div {
+    font-size: 0.9em;
+  }
+}
